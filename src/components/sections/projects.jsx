@@ -43,7 +43,7 @@ const Projects = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative block min-w-0 border border-black/[0.06] bg-black/[0.02] transition-colors hover:bg-black/[0.04] dark:border-white/[0.06] dark:bg-white/[0.03] dark:hover:bg-white/[0.05]"
+      className={`group relative block min-w-0 overflow-visible border border-black/[0.06] bg-black/[0.02] transition-colors hover:bg-black/[0.04] dark:border-white/[0.06] dark:bg-white/[0.03] dark:hover:bg-white/[0.05] ${isHovered ? "z-10" : ""}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       initial={{ opacity: 0, y: 16 }}
@@ -109,27 +109,27 @@ const Projects = ({
                 />
               </>
             ) : (
-<Image
-                  src={preview}
-                  alt={`${title} preview`}
-                  fill
-                  sizes={previewSizes}
-                  loading="eager"
-                  className={`object-cover transition-[filter] duration-500 ${isHovered ? "grayscale-0" : "grayscale"}`}
-                />
+              <Image
+                src={preview}
+                alt={`${title} preview`}
+                fill
+                sizes={previewSizes}
+                loading="eager"
+                className={`object-cover transition-[filter] duration-500 ${isHovered ? "grayscale-0" : "grayscale"}`}
+              />
             )}
           </div>
         </div>
       )}
 
       <div className="p-3 md:p-4">
-<div className="mb-2 flex items-center justify-between">
+        <div className="mb-2 flex items-center justify-between">
           <p className="text-[10px] font-medium text-muted-foreground md:text-[11px]">{category}</p>
           <div className="flex items-center gap-2">
-        
+
             {stars !== null && stars !== undefined && (
               <span className={`flex items-center gap-0.5 text-[10px] font-medium text-muted-foreground transition-colors duration-300 md:text-xs ${isHovered ? "text-yellow-500" : ""}`}>
-<Star size={"12px"} className={isHovered ? "fill-yellow-500" : "fill-muted-foreground"} />
+                <Star size={"12px"} className={isHovered ? "fill-yellow-500" : "fill-muted-foreground"}/>
                 {stars}
               </span>
             )}
@@ -137,13 +137,13 @@ const Projects = ({
         </div>
 
         <h1 className="mb-1.5 text-sm font-semibold md:text-base">{title}</h1>
-        <p className="mb-3 font-space-mono text-[11px] leading-relaxed text-justify text-muted-foreground md:text-xs">
+        <p className="mb-3 text-[11px] text-justify md:text-xs text-xs flex-1 prose max-w-full text-pretty font-inter leading-relaxed text-muted-foreground dark:prose-invert">
           {description}
         </p>
 
         <div className="flex flex-wrap gap-1.5">
           {techstacks.map((tech, index) => (
-            <TechBadge key={index} name={tech} />
+            <TechBadge key={index} name={tech}/>
           ))}
         </div>
       </div>

@@ -337,7 +337,7 @@ export const projects = [
     category: "Goto Project · Web App",
     description:
       "UI components library that offers awesome reusable components for building web applications, create stunning websites and enjoy the flow  from COPY to VIBE.",
-    techstacks: ["Next Js", "TypeScript", "Tailwind", "Convex" , "Monaco"],
+    techstacks: ["Next", "TypeScript", "Tailwind", "Convex" , "Monaco"],
     status: "active",
     link: "https://shadyxui.in/",
     preview: "/projects/SHADYX.png",
@@ -349,7 +349,7 @@ export const projects = [
     category: "Open Source · Github",
     description:
       "A full featured project management platform designed to streamline team's task tracking and team collaboration through dashboards that is customizable workflows and real time updates.",
-    techstacks: ["Javascript", "Next Js", "Hono", "Appwrite", "Tailwind"],
+    techstacks: ["Next", "Javascript", "Tailwind", "Hono", "Appwrite"],
     status: "active",
     link: "https://vectrus.vercel.app",
     preview: "/projects/axion.png",
@@ -361,7 +361,7 @@ export const projects = [
     category: "Networking Project · Web App",
     description:
       "Networking platform designed to help users connect and interact. Enables users to create profiles, share updates, communicate in real time and expand their network through a social experience.",
-    techstacks: ["Next Js", "Javascript", "MongoDB", "Node Js", "Socket.IO"],
+    techstacks: ["Next", "Javascript", "Tailwind", "MongoDB", "Node Js", "Socket.IO"],
     status: "active",
     link: "https://sonification.shiva.codes",
     preview: "/projects/FUGU.png",

@@ -300,13 +300,15 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 flex-wrap -mt-5">
-          <span className="bg-gradient-to-r from-[#6B8EF5] via-[#8B9FF8] to-[#A89FE8] bg-clip-text text-transparent font-extrabold text-[11px] uppercase tracking-widest md:text-sm text-shadow-md">
-            Full Stack developer
+        <div className="flex items-center -mt-5">
+          <span className="text-[11px] font-medium uppercase tracking-widest md:text-sm">
+            <span className="bg-gradient-to-r from-[#6B8EF5] via-[#8B9FF8] to-[#A89FE8] bg-clip-text text-transparent font-extrabold text-shadow-md">
+              Full Stack developer
+            </span>
+            <span className="text-muted-foreground">
+              &nbsp;building SaaS products and web apps.
+            </span>
           </span>
-          <p className="text-[11px] font-medium uppercase tracking-widest text-muted-foreground md:text-sm">
-            building SaaS products and web apps.
-          </p>
         </div>
         <motion.div
           className={`flex flex-row items-end gap-4 p-1 ${GeistPixelSquare.className}`}
@@ -354,7 +356,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
             I&apos;m Anurag, a <strong className="font-semibold text-foreground">Fullstack AI Engineer</strong>. Got into coding in my 2nd year of college, spent a year doing freelance work with React and Node js before landing on Next Js. The project that taught me the most was <strong className="font-semibold text-foreground"><a href="https://github.com/shivabhattacharjee/animetrix-next" target="_blank" className="underline">Shadyx UI</a></strong>, a UI component library that I built in college that hit <strong className="font-semibold text-foreground">1k users and over 150 downloads on SourceForge and npm</strong>. It has its own online compiler that supports <strong className="font-semibold text-foreground">10 different languages</strong>. Eventually got featured on sourceforge and SaasHub. Worth it.
           </p>
           <p className="mt-4 text-xs font-space-mono md:text-sm md:leading-relaxed text-justify text-muted-foreground">
-            I have expertise in frameworks like <strong className="font-semibold text-foreground">React Js, Node Js and Next Js</strong>. I leverage <strong className="font-semibold text-foreground">AWS</strong> services to create efficient and reliable solutions. <strong className="font-semibold text-foreground">MongoDB and PostgreSQL</strong> for database management, <strong className="font-semibold text-foreground">BetterAuth and Zustand</strong> for effective authentication and state management. I&apos;ve worked at <strong className="font-semibold text-foreground"><a href="https://www.usebez.ai" target="_blank" className="underline">Acadme</a></strong> as a fullstack developer intern, where I worked on managing and optimizing <strong className="font-semibold text-foreground">User Management and Analytics dashboard</strong>. I got to work with <strong className="font-semibold text-foreground">REST APIs</strong>, <strong className="font-semibold text-foreground">Node Js</strong> and <strong className="font-semibold text-foreground">Express Js</strong>.
+            I have expertise in frameworks like <strong className="font-semibold text-foreground">React Js, Node Js and Next Js</strong>. I leverage <strong className="font-semibold text-foreground">AWS</strong> services to create efficient and reliable solutions. <strong className="font-semibold text-foreground">MongoDB and PostgreSQL</strong> for database management, <strong className="font-semibold text-foreground">BetterAuth and Zustand</strong> for effective authentication and state management. I&apos;ve worked at <strong className="font-semibold text-foreground"><a href="https://www.usebez.ai" target="_blank" className="underline">Acadme</a></strong> as a fullstack developer intern, where I worked on managing and optimizing <strong className="font-semibold text-foreground">User Management and Analytics dashboard</strong>. I got to work with <strong className="font-semibold text-foreground">REST APIs</strong>, <strong className="font-semibold text-foreground">Node Js</strong> and <strong className="font-semibold text-foreground">Express Js</strong>. Beyond these technical skills, I possess strong proficiency in <strong className="font-semibold text-foreground">Data Structures and Algorithms</strong>, with particular expertise in <strong className="font-semibold text-foreground">Java</strong>. Additionally, I have substantial experience solving problems on <strong className="font-semibold text-foreground">LeetCode</strong>.
           </p>
         </motion.div>
 
@@ -375,8 +377,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
                 platform={platform}
                 username={username}
                 data={socialData?.[platform]}
-                loading={socialsLoading}
-              />
+                loading={socialsLoading}/>
             ))}
           </div>
         </motion.div>
@@ -396,7 +397,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           showHeader
           title="Projects"
           subtitle="A collection of things I've built.">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
             {projectsWithStars.map((project, index) => (
               <ProjectCard key={index} index={index} {...project}/>
             ))}
