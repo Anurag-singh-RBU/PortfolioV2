@@ -341,7 +341,7 @@ export const projects = [
     status: "active",
     link: "https://shadyxui.in/",
     preview: "/projects/SHADYX.png",
-    previewDark: "/projects/shadyxui.png",
+    previewDark: "/projects/SHADYX.png",
     github: "Anurag-singh-RBU/SHADYX-UI",
   },
   {
