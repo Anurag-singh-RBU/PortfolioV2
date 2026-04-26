@@ -397,7 +397,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           showHeader
           title="Skills"
           subtitle="Technologies I work with.">
-          <div className="flex flex-wrap gap-1.5 justify-center">
+          <div className="flex flex-wrap gap-1.5">
             {SKILLS.map((skill, index) => (
               <TechBadge key={index} name={skill} />
             ))}
