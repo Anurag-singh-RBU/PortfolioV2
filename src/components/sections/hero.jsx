@@ -395,6 +395,17 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
 
         <Layout
           showHeader
+          title="Skills"
+          subtitle="Technologies I work with.">
+          <div className="flex flex-wrap gap-1.5">
+            {SKILLS.map((skill, index) => (
+              <TechBadge key={index} name={skill} />
+            ))}
+          </div>
+        </Layout>
+        
+        <Layout
+          showHeader
           title="Projects"
           subtitle="A collection of things I've built.">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 px-2">
@@ -404,16 +415,6 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           </div>
         </Layout>
 
-        <Layout
-          showHeader
-          title="Skills"
-          subtitle="Technologies I work with.">
-          <div className="flex flex-wrap gap-1.5">
-            {SKILLS.map((skill, index) => (
-              <TechBadge key={index} name={skill} />
-            ))}
-          </div>
-        </Layout>
       </div>
 
     </div>
