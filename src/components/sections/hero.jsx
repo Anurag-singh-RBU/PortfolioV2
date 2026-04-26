@@ -18,7 +18,7 @@ import ProjectCard from "@/components/sections/projects";
 import Layout from "@/components/layout/layout";
 import { projects } from "@/constants";
 import Image from "next/image";
-
+import { TechBadge, SKILLS } from "@/lib/tech-icons";
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import LocationIcon from "@/components/icons/location";
@@ -397,9 +397,20 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           showHeader
           title="Projects"
           subtitle="A collection of things I've built.">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 px-2">
             {projectsWithStars.map((project, index) => (
               <ProjectCard key={index} index={index} {...project}/>
+            ))}
+          </div>
+        </Layout>
+
+        <Layout
+          showHeader
+          title="Skills"
+          subtitle="Technologies I work with.">
+          <div className="flex flex-wrap gap-1.5">
+            {SKILLS.map((skill, index) => (
+              <TechBadge key={index} name={skill} />
             ))}
           </div>
         </Layout>

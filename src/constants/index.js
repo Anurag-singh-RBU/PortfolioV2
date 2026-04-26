@@ -361,7 +361,7 @@ export const projects = [
     category: "Networking Project · Web App",
     description:
       "Networking platform designed to help users connect and interact. Enables users to create profiles, share updates, communicate in real time and expand their network through a social experience.",
-    techstacks: ["Next", "Javascript", "Tailwind", "MongoDB", "Node Js", "Socket.IO"],
+    techstacks: ["Next", "Javascript", "Tailwind", "Node.js", "MongoDB", "Socket.IO"],
     status: "active",
     link: "https://sonification.shiva.codes",
     preview: "/projects/FUGU.png",
