@@ -77,6 +77,7 @@ export const metadata = {
 };
 
 import { GeistPixelSquare } from "geist/font/pixel";
+import { GeistSans } from "geist/font/sans";
 import { Space_Mono, Press_Start_2P, Bungee } from "next/font/google";
 
 const spaceMono = Space_Mono({
@@ -113,7 +114,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en" suppressHydrationWarning className={`${spaceMono.variable} ${pressStart.variable} ${bungee.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${spaceMono.variable} ${pressStart.variable} ${bungee.variable} ${GeistSans.variable}`}>
       <head>
         <meta name="theme-color" content="#0B0D0E" />
         <meta name="color-scheme" content="dark light" />

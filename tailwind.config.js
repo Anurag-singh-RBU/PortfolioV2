@@ -24,6 +24,7 @@ const config = {
         doto: ["'Doto'", "sans-serif"],
         bungee: ["var(--font-bungee)", "cursive"],
         "space-mono": ["var(--font-space-mono)", "monospace"],
+        "GS": ["var(--font-geist-sans)", "sans-serif"],
       },
       fontSize: {
         sm: "0.8rem",

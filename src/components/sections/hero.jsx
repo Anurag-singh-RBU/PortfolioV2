@@ -19,6 +19,7 @@ import Layout from "@/components/layout/layout";
 import { projects } from "@/constants";
 import Image from "next/image";
 import { TechBadge, SKILLS } from "@/lib/tech-icons";
+import { cn } from "@/lib/utils";
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import LocationIcon from "@/components/icons/location";
@@ -289,7 +290,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
       <motion.div className="flex flex-col gap-6" {...fadeUp(0)}>
         <div className={GeistPixelSquare.className}>
           <p className="mb-3 font-doto sm:block hidden text-xs text-muted-foreground md:text-sm">
-            Hello I&apos;m <WaveEmoji/>
+            Hello I&apos;m <WaveEmoji />
           </p>
 
 
@@ -326,7 +327,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
                 });
               }}
             >
-              <ClipboardIcon className="mr-1.5 h-3 w-3"/> npm i @anuragcodes/shadyx
+              <ClipboardIcon className="mr-1.5 h-3 w-3" /> npm i @anuragcodes/shadyx
             </Button>
           </CornerBrackets>
           <div className="relative -ml-1 flex items-center">
@@ -341,7 +342,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
               <path d="M315.713 233.668c-17.136 0-34.884 1.224-51.408 5.508-6.731 1.836-3.672 11.016 3.061 9.792 13.464-2.448 27.54-1.836 41.004-1.224-.612 7.955-1.224 16.523-2.448 24.479-1.224 6.12-5.508 15.3-1.836 21.42 1.836 3.061 4.896 3.061 7.956 1.836 7.344-3.06 7.344-15.912 8.568-22.644 1.836-11.017 2.447-21.42 2.447-32.437 0-3.67-3.672-6.73-7.344-6.73" />
             </svg>
             <span className="ml-2 -rotate-[8deg] whitespace-nowrap text-[10px] text-muted-foreground/50 md:text-xs">
-              try this in <br/> your terminal
+              try this in <br /> your terminal
             </span>
           </div>
         </motion.div>
@@ -377,7 +378,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
                 platform={platform}
                 username={username}
                 data={socialData?.[platform]}
-                loading={socialsLoading}/>
+                loading={socialsLoading} />
             ))}
           </div>
         </motion.div>
@@ -386,9 +387,9 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           <h3 className="font-doto text-2xl font-medium md:text-3xl">
             Leetcode
           </h3>
-          <Image src="/leetcode.png" alt="LeetCode" className="w-full h-full mt-5 object-cover dark:hidden block" width={100} height={100} priority unoptimized/>
-          <Image src="/leetcode-dark.png" alt="LeetCode" className="w-full h-full mt-5 object-cover dark:block hidden" width={100} height={100} priority unoptimized/>
-          <div className="text-sm text-muted-foreground mt-5 tracking-wide flex justify-center items-center" style={{wordSpacing: "3px"}}>
+          <Image src="/leetcode.png" alt="LeetCode" className="w-full h-full mt-5 object-cover dark:hidden block" width={100} height={100} priority unoptimized />
+          <Image src="/leetcode-dark.png" alt="LeetCode" className="w-full h-full mt-5 object-cover dark:block hidden" width={100} height={100} priority unoptimized />
+          <div className="text-sm text-muted-foreground mt-5 tracking-wide flex justify-center items-center" style={{ wordSpacing: "3px" }}>
             <span className="text-sm tracking-widest font-hanken text-black font-bold dark:text-teal-300"> 2,084 </span>&nbsp;submissions in 2025
           </div>
         </motion.div>
@@ -403,17 +404,32 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
             ))}
           </div>
         </Layout>
-        
+
         <Layout
           showHeader
           title="Projects"
           subtitle="A collection of things I've built.">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 px-2">
             {projectsWithStars.map((project, index) => (
-              <ProjectCard key={index} index={index} {...project}/>
+              <ProjectCard key={index} index={index} {...project} />
             ))}
           </div>
         </Layout>
+
+        <div className="w-full flex justify-center mt-8 mb-10 font-jetbrains font-bold">
+          <Link
+            href="/projects"
+            className="text-sm px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100">
+            <div className="flex items-center justify-center">
+              <button className="rounded-lg relative group border-[2px] border-gray-300 flex bg-neutral-800 dark:bg-neutral-700 dark:border-neutral-500 dark:font-bold text-white items-center gap-2 pl-9 py-1.5 pr-3 shadow-sm">
+                <Box />
+                <span className="inline-block group-hover:-translate-x-7 transition-transform duration-500 tracking-wider">
+                  See More
+                </span>
+              </button>
+            </div>
+          </Link>
+        </div>
 
       </div>
 
@@ -422,3 +438,56 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
 };
 
 export default Hero;
+
+const Box = () => {
+  return (
+    <div className="size-6 absolute left-0.5 group-hover:left-[calc(100%-1.9rem)] transition-all duration-500 ml-0.5 inset-y-0 my-auto gap-px rounded-sm bg-[#FFCC00] flex flex-col justify-center items-center group-hover:transform group-hover:rotate-180 ease-out">
+      <div className="flex gap-px">
+        <Bubble />
+        <Bubble />
+        <Bubble highlight />
+        <Bubble />
+        <Bubble />
+      </div>
+      <div className="flex gap-px">
+        <Bubble />
+        <Bubble />
+        <Bubble />
+        <Bubble highlight />
+        <Bubble />
+      </div>
+      <div className="flex gap-px">
+        <Bubble highlight />
+        <Bubble highlight />
+        <Bubble highlight />
+        <Bubble highlight />
+        <Bubble highlight />
+      </div>
+      <div className="flex gap-px">
+        <Bubble />
+        <Bubble />
+        <Bubble />
+        <Bubble highlight />
+        <Bubble />
+      </div>
+      <div className="flex gap-px">
+        <Bubble />
+        <Bubble />
+        <Bubble highlight />
+        <Bubble />
+        <Bubble />
+      </div>
+    </div>
+  );
+};
+
+const Bubble = ({ className, highlight }) => {
+  return (
+    <span
+      className={cn(
+        "inline-block size-[3px] rounded-full bg-[#FFFFFF40]",
+        highlight && "bg-white animate-pulse ease-linear duration-400"
+      )}
+    ></span>
+  );
+};
