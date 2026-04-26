@@ -408,7 +408,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
           showHeader
           title="Projects"
           subtitle="A collection of things I've built.">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 px-2">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 px-2 justify-center">
             {projectsWithStars.map((project, index) => (
               <ProjectCard key={index} index={index} {...project}/>
             ))}
