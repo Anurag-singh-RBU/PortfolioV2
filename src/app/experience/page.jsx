@@ -2,7 +2,6 @@ import Layout from "@/components/layout/layout";
 import Timeline from "@/components/layout/timeline";
 import { experiences } from "@/constants";
 
-
 export const metadata = {
   title: "Experience",
 };
@@ -22,7 +21,7 @@ const Experience = () => {
     <Layout
       showHeader
       title="Experiences"
-      subtitle={`My journey as a software developer over ${totalYears}+ years`}
+      subtitle={`My journey as a software developer.`}
     >
       <div>
         {[...experiences].reverse().map((experience, index) => (

@@ -55,7 +55,7 @@ const ExperienceCard = ({ role, company, year, responsibilities }) => {
                     </p>
                     <ul className="list-disc pl-5 font-space-mono md:text-sm md:leading-relaxed text-muted-foreground">
                       {responsibilities.map((responsibility, index) => (
-                        <li key={index} className="font-space-mono md:text-sm md:leading-relaxed text-muted-foreground">{responsibility}</li>
+                        <li key={index} className="rby">{responsibility}</li>
                       ))}
                     </ul>
                   </div>

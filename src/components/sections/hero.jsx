@@ -286,7 +286,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
   }, []);
 
   return (
-    <div className="mx-auto sm:mt-0 -mt-5 flex flex-col gap-10 md:max-w-4xl">
+    <div className="mx-auto flex flex-col gap-10 md:max-w-4xl">
       <motion.div className="flex flex-col gap-6" {...fadeUp(0)}>
         <div className={GeistPixelSquare.className}>
           <p className="mb-3 font-doto sm:block hidden text-xs text-muted-foreground md:text-sm">
@@ -303,10 +303,10 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
 
         <div className="flex items-center -mt-5">
           <span className="text-[11px] font-medium uppercase tracking-widest md:text-sm">
-            <span className="bg-gradient-to-r from-[#6B8EF5] via-[#8B9FF8] to-[#A89FE8] bg-clip-text text-transparent font-extrabold text-shadow-md">
+            <span className="bg-gradient-to-r sm:mb-0 mb-2 from-[#6B8EF5] via-[#8B9FF8] to-[#A89FE8] bg-clip-text text-transparent font-extrabold text-shadow-md">
               Full Stack developer
             </span>
-            <span className="text-muted-foreground">
+            <span className="text-muted-foreground sm:mt-0 mt-2">
               &nbsp;building SaaS products and web apps.
             </span>
           </span>
