@@ -44,18 +44,18 @@ const ExperienceCard = ({ role, company, year, responsibilities }) => {
             >
               <div className="p-4">
                 <div className="border-l-2 border-primary px-8 py-4">
-                  <div className="mb-6 space-y-1">
+                  <div className="mb-6 space-y-1 font-space-mono">
                     <p className="font-cera font-bold text-xl">{role}</p>
-                    <p className="text-sm">{company}</p>
+                    <p className="text-sm font-space-mono">{company}</p>
                     <p className="text-sm">{year}</p>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-xs font-space-mono md:text-sm md:leading-relaxed text-justify text-muted-foreground">
                     <p className="font-cera font-medium text-lg">
                       Key Responsibilities
                     </p>
-                    <ul className="list-disc list-inside">
+                    <ul className="list-disc pl-5 font-space-mono md:text-sm md:leading-relaxed text-muted-foreground">
                       {responsibilities.map((responsibility, index) => (
-                        <li key={index}>{responsibility}</li>
+                        <li key={index} className="font-space-mono md:text-sm md:leading-relaxed text-muted-foreground">{responsibility}</li>
                       ))}
                     </ul>
                   </div>
