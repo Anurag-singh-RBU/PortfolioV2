@@ -293,7 +293,6 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
             Hello I&apos;m <WaveEmoji />
           </p>
 
-
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <h1 className="text-4xl md:text-4xl font-bungee text-black/70 sectionOne whitespace-nowrap">
               Anurag &nbsp;Singh
@@ -303,7 +302,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
 
         <div className="flex items-center -mt-5">
           <span className="text-[11px] font-medium uppercase tracking-widest md:text-sm">
-            <span className="bg-gradient-to-r sm:mb-0 mb-2 from-[#6B8EF5] via-[#8B9FF8] to-[#A89FE8] bg-clip-text text-transparent font-extrabold text-shadow-md">
+            <span className="sm:mb-0 mb-2 fullstack-gradient-text">
               Full Stack developer
             </span>
             <span className="text-muted-foreground sm:mt-0 mt-2">

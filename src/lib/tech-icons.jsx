@@ -112,6 +112,9 @@ const TECH_META = {
   "React Js": { Icon: SiReact, color: "#61DAFB" },
   "Node JS": { Icon: SiNodedotjs, color: "#5FA04E" },
   "Express Js": { Icon: SiExpress, adaptive: true },
+  SQL: { Icon: Database, color: "#4479A1" },
+  ETL: { Icon: Activity, color: "#0EA5E9" },
+  "Data Warehousing": { Icon: Database, color: "#6366F1" },
 
   // no Simple Icons entry
   YOLO: { Icon: Eye, color: "#00BFFF" },
@@ -139,7 +142,6 @@ export const SKILLS = [
   "MySQL",
   "Google Maps API",
   "Python",
-  "Express",
   "OpenCV",
   "Socket.IO",
   "Gemini 1.5 Pro",
