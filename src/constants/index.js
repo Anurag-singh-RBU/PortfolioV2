@@ -153,7 +153,7 @@ export const experiences = [
           text: "58",
           bold: true,
         },
-        { text: " reusable UI blocks with React js , JavaScript and Tailwind so developers can copy paste and use them right away." },
+        { text: " reusable UI blocks with React js, JavaScript and Tailwind so developers can copy paste and use them right away." },
       ],
       [
         { text: "Published everything on " },
@@ -168,7 +168,7 @@ export const experiences = [
       [
         { text: "Focused on " },
         { text: "developer experience", bold: true },
-        { text: " by implementing clean abstractions , minimal configuration setup and copy paste usability , improving adoption and usability for end developers." }
+        { text: " by implementing clean abstractions, minimal configuration setup and copy paste usability, improving adoption and usability for end developers." }
       ],
     ],
     techstacks: [
