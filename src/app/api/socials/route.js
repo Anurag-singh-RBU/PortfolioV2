@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const [githubRes, twitterRes] = await Promise.allSettled([
-      fetch(`https://api.github.com/users/shivabhattacharjee`, { next: { revalidate: 3600 } }).then(res => res.json()),
+      fetch(`https://api.github.com/users/Anurag-singh-RBU`, { next: { revalidate: 3600 } }).then(res => res.json()),
       fetch(`https://api.fxtwitter.com/sh17va`, { next: { revalidate: 3600 } }).then(res => res.json())
     ]);
 
@@ -12,9 +12,9 @@ export async function GET() {
 
     return NextResponse.json({
       github: {
-        name: githubData.name || githubData.login || "Shiva Bhattacharjee",
-        username: githubData.login || "shivabhattacharjee",
-        avatar: githubData.avatar_url || "https://github.com/shivabhattacharjee.png",
+        name: githubData.name || githubData.login || "Anurag Singh",
+        username: githubData.login || "Anurag-singh-RBU",
+        avatar: githubData.avatar_url || "https://github.com/Anurag-singh-RBU.png",
         bio: githubData.bio || "I work on AI, LLMs, and building developer tools on top of them",
         location: githubData.location || "Delhi, India",
         stats: [
@@ -23,9 +23,9 @@ export async function GET() {
         ]
       },
       twitter: {
-        name: twitterData.name || "Shiva",
+        name: twitterData.name || "Anurag",
         username: twitterData.screen_name || "sh17va",
-        avatar: twitterData.avatar_url?.replace("_normal", "") || "https://github.com/shivabhattacharjee.png",
+        avatar: twitterData.avatar_url?.replace("_normal", "") || "https://github.com/Anurag-singh-RBU.png",
         banner: twitterData.banner_url || "https://pbs.twimg.com/profile_banners/1186556526917324800/1757151975/1500x500",
         bio: twitterData.description || "I write system prompts for a living",
         location: twitterData.location || "San Francisco, CA (Mentally)",
@@ -35,7 +35,7 @@ export async function GET() {
         ]
       },
       linkedin: {
-        name: "Shiva Bhattacharjee",
+        name: "Anurag Singh",
         username: "Building AI Agents",
         avatar: "https://pbs.twimg.com/profile_images/2040623093945864192/dur1Mty-_400x400.jpg",
         banner: "https://media.licdn.com/dms/image/v2/D5616AQHsUhEEUkcobw/profile-displaybackgroundimage-shrink_350_1400/B56ZzKNUp8IcAg-/0/1772919017837?e=1778716800&v=beta&t=3txh8G3KbnSs8-eaLxbnAs6iQtSbhQAXShVKjcVJ-rw",
@@ -46,17 +46,17 @@ export async function GET() {
         ]
       },
       discord: {
-        name: "Shiva",
+        name: "Anurag",
         username: "sh1xva",
-        avatar: "https://github.com/shivabhattacharjee.png",
+        avatar: "https://github.com/Anurag-singh-RBU.png",
         bio: "My brain no longer brains",
         location: "Mental Hospital",
         stats: []
       },
       email: {
         name: "Drop an Email",
-        username: "hello@theshiva.xyz",
-        avatar: "https://github.com/shivabhattacharjee.png",
+        username: "anuragsingh260805@gmail.com",
+        avatar: "https://github.com/Anurag-singh-RBU.png",
         bio: "Whether you have a question, a project idea, or just want to say hi, feel free to reach out!",
         location: "Inbox",
         stats: []

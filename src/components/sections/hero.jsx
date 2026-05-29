@@ -42,39 +42,31 @@ const projectsWithStars = await Promise.all(
 const socialLinks = [
   {
     label: "Twitter",
-    href: "https://x.com/sh17va",
+    href: "https://x.com/anuragRBU",
     icon: <XTwitterIcon className="h-3.5 w-3.5" />,
     external: true,
     platform: "twitter",
-    username: "sh17va",
+    username: "anuragRBU",
   },
   {
     label: "Github",
-    href: "https://github.com/shivabhattacharjee",
+    href: "https://github.com/Anurag-singh-RBU",
     icon: <GithubIcon className="h-3.5 w-3.5" />,
     external: true,
     platform: "github",
-    username: "shivabhattacharjee",
+    username: "Anurag-singh-RBU",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/shiva-bhattacharjee/",
+    href: "https://www.linkedin.com/in/anuragsinghrbu",
     icon: <LinkedinIcon className="h-3.5 w-3.5" />,
     external: true,
     platform: "linkedin",
-    username: "shiva-bhattacharjee",
-  },
-  {
-    label: "Discord",
-    href: "https://discordapp.com/users/503152077824851968",
-    icon: <DiscordIcon className="h-3.5 w-3.5" />,
-    external: true,
-    platform: "discord",
-    username: "503152077824851968",
+    username: "anuragsinghrbu",
   },
   {
     label: "Email",
-    href: "mailto:hello@theshiva.xyz",
+    href: "anuragsingh260805@gmail.com",
     icon: <IoIosMail size="14px" />,
     external: true,
   },
@@ -116,7 +108,7 @@ function SocialPreviewCard({ loading, data, platform, username }) {
       <div className={`flex gap-3 relative z-10 ${data.banner ? "flex-col items-start -mt-12" : "items-center"}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={data.avatar || "https://github.com/shivabhattacharjee.png"}
+          src={data.avatar || "https://github.com/Anurag-singh-RBU.png"}
           alt={data.name}
           className={`rounded-full object-cover bg-background ${data.banner ? "h-[68px] w-[68px] border-[3px] border-card" : "h-14 w-14 border border-border"}`}
         />
@@ -157,27 +149,6 @@ function SocialPreviewCard({ loading, data, platform, username }) {
 }
 
 function SocialButton({ label, href, icon, external, platform, username, data, loading }) {
-  const [isHovered, setIsHovered] = useState(false);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
-  const springConfig = { damping: 25, stiffness: 150, mass: 0.5 };
-  const springX = useSpring(x, springConfig);
-  const springY = useSpring(y, springConfig);
-
-  const handleMouseMove = (e) => {
-    x.set(e.clientX - 160);
-    y.set(e.clientY + 12);
-  };
-
-  const handleMouseEnter = (e) => {
-    x.set(e.clientX - 160);
-    y.set(e.clientY + 12);
-    springX.jump(e.clientX - 160);
-    springY.jump(e.clientY + 12);
-    setIsHovered(true);
-  };
-
   const content = (
     <Link
       href={href}
@@ -192,39 +163,6 @@ function SocialButton({ label, href, icon, external, platform, username, data, l
       </CornerBrackets>
     </Link>
   );
-
-  if (platform && username) {
-    return (
-      <div
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={() => setIsHovered(false)}
-        onMouseMove={handleMouseMove}
-        className="relative"
-      >
-        {content}
-        <AnimatePresence>
-          {isHovered && (
-            <motion.div
-              initial={{ opacity: 0, x: -10, scale: 0.95 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -10, scale: 0.95 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
-              className="flex w-[320px] flex-col gap-3 rounded-xl overflow-hidden bg-background/30 backdrop-blur-2xl backdrop-saturate-150 p-4 shadow-2xl border border-white/20 dark:border-white/10"
-              style={{
-                position: "fixed",
-                left: springX,
-                top: springY,
-                zIndex: 9999,
-                pointerEvents: "none",
-              }}
-            >
-              <SocialPreviewCard platform={platform} username={username} data={data} loading={loading} />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    );
-  }
 
   return content;
 }
@@ -320,7 +258,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
               onClick={() => {
                 navigator.clipboard.writeText("npm i @anuragcodes/shadyx");
                 toast.success("Copied to clipboard", {
-                  description: "You can now paste it in your terminal to see the cli version of my portfolio",
+                  description: "You can now paste it in your terminal to access my UI library, Shadyx UI.",
                   icon: <ClipboardIcon className="h-4 w-4" />,
                   classNames: { description: "font-space-mono" },
                 });
@@ -353,7 +291,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
             About Me
           </h5>
           <p className="text-xs font-space-mono md:text-sm text-justify md:leading-relaxed text-muted-foreground">
-            I&apos;m Anurag, a <strong className="font-semibold text-foreground">Fullstack AI Engineer</strong>. Got into coding in my 2nd year of college, spent a year doing freelance work with React and Node js before landing on Next Js. The project that taught me the most was <strong className="font-semibold text-foreground"><a href="https://github.com/shivabhattacharjee/animetrix-next" target="_blank" className="underline">Shadyx UI</a></strong>, a UI component library that I built in college that hit <strong className="font-semibold text-foreground">1k users and over 150 downloads on SourceForge and npm</strong>. It has its own online compiler that supports <strong className="font-semibold text-foreground">10 different languages</strong>. Eventually got featured on sourceforge and SaasHub. Worth it.
+            I&apos;m Anurag, a <strong className="font-semibold text-foreground">Fullstack AI Engineer</strong>. Got into coding in my 2nd year of college, spent a year doing freelance work with React and Node js before landing on Next Js. The project that taught me the most was <strong className="font-semibold text-foreground"><a href="https://github.com/Anurag-singh-RBU/animetrix-next" target="_blank" className="underline">Shadyx UI</a></strong>, a UI component library that I built in college that hit <strong className="font-semibold text-foreground">1k users and over 150 downloads on SourceForge and npm</strong>. It has its own online compiler that supports <strong className="font-semibold text-foreground">10 different languages</strong>. Eventually got featured on sourceforge and SaasHub. Worth it.
           </p>
           <p className="mt-4 text-xs font-space-mono md:text-sm md:leading-relaxed text-justify text-muted-foreground">
             I have expertise in frameworks like <strong className="font-semibold text-foreground">React Js, Node Js and Next Js</strong>. I leverage <strong className="font-semibold text-foreground">AWS</strong> services to create efficient and reliable solutions. <strong className="font-semibold text-foreground">MongoDB and PostgreSQL</strong> for database management, <strong className="font-semibold text-foreground">BetterAuth and Zustand</strong> for effective authentication and state management. I&apos;ve worked at <strong className="font-semibold text-foreground"><a href="https://www.usebez.ai" target="_blank" className="underline">Acadme</a></strong> as a fullstack developer intern, where I worked on managing and optimizing <strong className="font-semibold text-foreground">User Management and Analytics dashboard</strong>. I got to work with <strong className="font-semibold text-foreground">REST APIs</strong>, <strong className="font-semibold text-foreground">Node Js</strong> and <strong className="font-semibold text-foreground">Express Js</strong>. Beyond these technical skills, I possess strong proficiency in <strong className="font-semibold text-foreground">Data Structures and Algorithms</strong>, with particular expertise in <strong className="font-semibold text-foreground">Java</strong>. Additionally, I have substantial experience solving problems on <strong className="font-semibold text-foreground">LeetCode</strong>.

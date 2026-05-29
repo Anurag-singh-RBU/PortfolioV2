@@ -11,13 +11,13 @@ import Script from "next/script";
 
 export const metadata = {
   title: {
-    template: "%s | Shiva Bhattacharjee",
-    default: "Shiva Bhattacharjee - Full Stack Developer",
+    template: "%s | Anurag Singh",
+    default: "Anurag Singh - Full Stack Developer",
   },
   description:
-    "Hello there I am Shiva a full stack developer and I love to build products that make people's life easier.",
+    "Hello there I am Anurag a full stack developer and I love to build products that make people's life easier.",
   keywords: [
-    "Shiva Bhattacharjee",
+    "Anurag Singh",
     "Full Stack Developer",
     "React",
     "Next.js",
@@ -28,9 +28,9 @@ export const metadata = {
     "Portfolio",
     "Software Engineer",
   ],
-  authors: [{ name: "Shiva Bhattacharjee" }],
-  creator: "Shiva Bhattacharjee",
-  publisher: "Shiva Bhattacharjee",
+  authors: [{ name: "Anurag Singh" }],
+  creator: "Anurag Singh",
+  publisher: "Anurag Singh",
   robots: {
     index: true,
     follow: true,
@@ -49,30 +49,30 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shiva.codes",
-    title: "Shiva Bhattacharjee - Full Stack Developer",
+    url: "https://anuragsingh.codes",
+    title: "Anurag Singh - Full Stack Developer",
     description:
-      "Hello there I am Shiva a full stack developer and I love to build products that make people's life easier.",
-    siteName: "Shiva Bhattacharjee Portfolio",
+      "Hello there I am Anurag a full stack developer and I love to build products that make people's life easier.",
+    siteName: "Anurag Singh Portfolio",
     images: [
       {
-        url: "https://shiva.codes/opengraph.png",
+        url: "https://anuragsingh.codes/opengraph.png",
         width: 1200,
         height: 630,
-        alt: "Shiva Bhattacharjee - Full Stack Developer",
+        alt: "Anurag Singh - Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shiva Bhattacharjee - Full Stack Developer",
+    title: "Anurag Singh - Full Stack Developer",
     description:
-      "Hello there I am Shiva a full stack developer and I love to build products that make people's life easier.",
-    images: ["https://shiva.codes/opengraph.png"],
+      "Hello there I am Anurag a full stack developer and I love to build products that make people's life easier.",
+    images: ["https://anuragsingh.codes/opengraph.png"],
     creator: "@sh17va",
   },
   alternates: {
-    canonical: "https://shiva.codes",
+    canonical: "https://anuragsingh.codes",
   },
 };
 
@@ -105,12 +105,12 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Shiva Bhattacharjee",
+    name: "Anurag Singh",
     jobTitle: "Full Stack Developer",
     description:
       "Full stack developer who loves to build products that make people's life easier",
-    url: "https://shiva.codes",
-    image: "https://shiva.codes/opengraph.png",
+    url: "https://anuragsingh.codes",
+    image: "https://anuragsingh.codes/opengraph.png",
   };
 
   return (

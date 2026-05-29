@@ -8,12 +8,12 @@ export const navLinks = [
     name: "Projects",
   },
   {
-    path: "/hackathons",
-    name: "Hacks",
-  },
-  {
     path: "/experience",
     name: "Experience",
+  },
+  {
+    path: "/resume",
+    name: "Resume",
   },
 ];
 
@@ -28,24 +28,7 @@ export const notableAchievements = [
       },
     ],
   },
-  {
-    title: "Hackathons",
-    body: [
-      { text: "Won " },
-      { text: "5 hackathons", bold: true, href: "/hackathons" },
-      { text: ", mostly building AI stuff. " },
-      { text: "WasteEasy", bold: true },
-      {
-        text: " was probably the one I'm proudest of, a full waste-management app that uses AI-assisted waste classification, nearby disposal discovery, and a rewards loop where users earn coupons for responsible dumping. Took home ",
-      },
-      { text: "Rs. 30,000", bold: true },
-      { text: " from ADTU and got called out as a unique tech startup at an " },
-      { text: "IIM Shillong", bold: true },
-      { text: " entrepreneurship event." },
-    ],
-    link: "https://github.com/ShivaBhattacharjee/WasteEasy",
-    linkLabel: "WasteEasy on GitHub",
-  },
+
   {
     title: "Rise In bounty",
     body: [
@@ -59,7 +42,7 @@ export const notableAchievements = [
         text: ". Built flows for issuing loans, tracking active borrows, repayments, and defaulter marking with transparent contract-backed state. No banks, just smart contracts.",
       },
     ],
-    link: "https://github.com/ShivaBhattacharjee/lending-blockchain",
+    link: "https://github.com/Anurag-singh-RBU/lending-blockchain",
     linkLabel: "lending-blockchain on GitHub",
   },
   {
@@ -89,7 +72,7 @@ export const notableAchievements = [
       { text: "~190 stars", bold: true },
       { text: "." },
     ],
-    link: "https://github.com/ShivaBhattacharjee/AnimeTrix-next",
+    link: "https://github.com/Anurag-singh-RBU/AnimeTrix-next",
     linkLabel: "AnimeTrix on GitHub",
   },
 ];
@@ -275,188 +258,10 @@ export const projects = [
       "Networking platform designed to help users connect and interact. Enables users to create profiles, share updates, communicate in real time and expand their network through a social experience.",
     techstacks: ["Next", "Javascript", "Tailwind", "Node.js", "MongoDB", "Socket.IO"],
     status: "active",
-    link: "https://sonification.shiva.codes",
+    link: "https://sonification.anuragsingh.codes",
     preview: "/projects/FUGU.png",
     previewDark: "/projects/FUGU.png",
-    github: "ShivaBhattacharjee/image-sonification",
-  },
-];
-
-export const hackathons = [
-  {
-    title: "WasteEasy",
-    event: "Envision Hackathon",
-    year: "2023",
-    placement: "1st Place",
-    college: "Assam Down Town University",
-    body: [
-      { text: "Built WasteEasy, a " },
-      { text: "waste-management platform", bold: true },
-      { text: " focused on correct segregation and easier disposal. Added " },
-      { text: "AI-powered waste classification", bold: true },
-      { text: ", " },
-      { text: "location-aware discovery", bold: true },
-      { text: " of nearby disposal points via maps, and a " },
-      { text: "coupon-based incentive loop", bold: true },
-      { text: " to reward responsible dumping behavior. The project won " },
-      { text: "1st place at Envision Hackathon", bold: true },
-      { text: " and was later recognised as a unique tech startup at an " },
-      { text: "IIM Shillong", bold: true },
-      { text: " entrepreneurship event." },
-    ],
-    techstacks: [
-      "React JS",
-      "Node.js",
-      "MongoDB",
-      "Google Maps API",
-      "Gemini 1.5 Pro",
-      "Python",
-      "YOLO",
-      "Vite",
-    ],
-    link: "https://github.com/ShivaBhattacharjee/WasteEasy",
-  },
-  {
-    title: "Smart Parking for Guwahati",
-    event: "Technophilia 2023",
-    year: "2023",
-    placement: "1st Place",
-    college: "Assam Royal Global University",
-    body: [
-      { text: "Built a " },
-      { text: "Google Maps-style smart parking platform", bold: true },
-      {
-        text: " for Guwahati where users can discover nearby parking spots, calculate the ",
-      },
-      { text: "shortest route", bold: true },
-      {
-        text: " to available locations, and make faster parking decisions in busy areas. Added ",
-      },
-      { text: "community-driven features", bold: true },
-      {
-        text: " like ratings, written reviews, on-ground image uploads, and complaint reporting to flag incorrect info or local issues. The ",
-      },
-      { text: "crowdsourced data model", bold: true },
-      { text: " kept listings fresh and practical, helping the project win " },
-      { text: "1st prize at Technophilia", bold: true },
-      { text: "." },
-    ],
-    techstacks: ["React", "Node.js", "MongoDB", "Google Maps API"],
-  },
-  {
-    title: "MediTrack Attendance",
-    event: "Hack GCU",
-    year: "2024",
-    placement: "2nd Place",
-    college: "Girijananda Chowdhury University",
-    body: [
-      { text: "Built a medical attendance system in a " },
-      { text: "20-hour sprint", bold: true },
-      {
-        text: " to digitize attendance for healthcare staff and trainees. Implemented ",
-      },
-      { text: "rapid check-in flows", bold: true },
-      {
-        text: ", role-based records, and basic reporting to reduce manual entry and improve shift-level visibility. The speed of execution and practical utility secured ",
-      },
-      { text: "2nd prize at Hack GCU", bold: true },
-      { text: "." },
-    ],
-    techstacks: ["React", "Node.js", "Express", "MongoDB", "Python", "OpenCV"],
-  },
-  {
-    title: "Campus Safety App",
-    event: "Code War 5.0 Hackathon",
-    year: "2024",
-    placement: "2nd Place",
-    college: "Assam Engineering College",
-    body: [
-      { text: "Secured " },
-      { text: "2nd position at Code War 5.0", bold: true },
-      { text: " by building a campus safety app that enabled " },
-      { text: "incident reporting, location-aware alerts", bold: true },
-      { text: ", and faster coordination during emergencies. Built with " },
-      {
-        text: "Next.js 14, Google Maps API, serverless functions, and Socket.IO",
-        bold: true,
-      },
-      { text: " for real-time updates and communication." },
-    ],
-    techstacks: [
-      "Next.js 14",
-      "Google Maps API",
-      "Serverless Functions",
-      "Socket.IO",
-    ],
-  },
-  {
-    title: "Real-time Space Data Terminal",
-    event: "Frint Hackathon",
-    year: "2025",
-    placement: "3rd Place",
-    college: "Assam Down Town University",
-    body: [
-      { text: "Won " },
-      { text: "3rd position", bold: true },
-      {
-        text: " by building a live space intelligence dashboard that combined ",
-      },
-      {
-        text: "Mars weather updates, ISS live tracker, near-Earth asteroid monitoring",
-        bold: true,
-      },
-      {
-        text: ", and NASA's Astronomy Picture of the Day in one terminal-style interface. Built with ",
-      },
-      { text: "Next.js, Three.js, and NASA Open APIs", bold: true },
-      {
-        text: " with real-time data refresh and interactive visual rendering.",
-      },
-    ],
-    techstacks: ["Next.js", "Three.js", "NASA Open APIs"],
-  },
-  {
-    title: "Smart India Hackathon",
-    event: "SIH 2023",
-    year: "2023",
-    placement: "Qualifier",
-    college: " Visvesvaraya Technological University ",
-    body: [
-      { text: "Qualified for " },
-      { text: "SIH 2023", bold: true },
-      { text: " in my " },
-      { text: "very first semester", bold: true },
-      {
-        text: " of college. Figured it out on the fly and made it through the ",
-      },
-      { text: "national rounds", bold: true },
-      { text: "." },
-    ],
-    techstacks: ["React", "Node.js", "Express", "MongoDB"],
-  },
-  {
-    title: "Lending on Blockchain",
-    event: "Rise In Bounty",
-    year: "2023",
-    placement: "Bounty Winner",
-    college: "Assam Royal Global University",
-    body: [
-      { text: "Built a " },
-      { text: "decentralised loan management app on Ethereum", bold: true },
-      {
-        text: " where users can issue loans, receive loans, repay dues, and flag defaults, all with ",
-      },
-      { text: "transparent on-chain records", bold: true },
-      { text: ". The protocol was designed around " },
-      { text: "trust-minimised lending", bold: true },
-      { text: " and " },
-      { text: "on-chain credit history creation", bold: true },
-      { text: " without traditional intermediaries, which earned a " },
-      { text: "Rise In bounty", bold: true },
-      { text: "." },
-    ],
-    techstacks: ["Solidity", "Ethereum", "React", "Hardhat", "Web3.js"],
-    link: "https://github.com/ShivaBhattacharjee/lending-blockchain",
+    github: "Anurag-singh-RBU/image-sonification",
   },
 ];
 

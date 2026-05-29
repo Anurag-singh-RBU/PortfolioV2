@@ -24,9 +24,9 @@ const navigateLinks = [
   { name: "Home", href: "/" },
   { name: "Experience", href: "/experience" },
   { name: "Projects", href: "/projects" },
-  { name: "Components", href: "/Components" },
+  { name: "Components", href: "https://shadyxui.in/components" },
   { name: "Blog", href: "/Blog" },
-  { name: "Colors", href: "/Colors" },
+  { name: "Colors", href: "https://shadyxui.in/colors" },
   { name: "Resume", href: "/resume" },
 ];
 
@@ -41,37 +41,37 @@ const hexToRgba = (hex, alpha) => {
 const socialIcons = [
   {
     label: "Twitter / X",
-    href: "https://x.com/sh17va",
+    href: "https://x.com/anuragRBU",
     icon: XTwitterIcon,
     color: "#1DA1F2",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/shiva-bhattacharjee/",
+    href: "https://www.linkedin.com/in/anuragsinghrbu/",
     icon: LinkedinIcon,
     color: "#0077B5",
   },
   {
     label: "GitHub",
-    href: "https://github.com/shivabhattacharjee",
+    href: "https://github.com/Anurag-singh-RBU",
     icon: GithubIcon,
     color: "#6e5494",
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/sh17va",
+    href: "https://instagram.com/anurag26_005",
     icon: FaInstagram,
     color: "#E4405F",
   },
   {
     label: "Pinterest",
-    href: "https://pinterest.com/sh17va",
+    href: "https://pinterest.com",
     icon: FaPinterestP,
     color: "#BD081C",
   },
   {
     label: "Email",
-    href: "mailto:hello@theshiva.xyz",
+    href: "mailto:anuragsingh260805@gmail.com",
     icon: IoIosMail,
     color: "#10B981",
   },

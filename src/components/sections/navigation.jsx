@@ -11,6 +11,7 @@ import HouseIcon from "@/components/icons/house";
 import CodeEditorIcon from "@/components/icons/sparkles";
 import SuitcaseIcon from "@/components/icons/briefcase";
 import MagnifierIcon from "@/components/icons/beaker";
+import ClipboardIcon from "@/components/icons/clipboard";
 import StarSparkleIcon from "@/components/icons/star-sparkle";
 import {
   Tabs,
@@ -25,8 +26,8 @@ const iconMap = {
   "/": HouseIcon,
   "/projects": CodeEditorIcon,
   "/experience": SuitcaseIcon,
-  "/hackathons": StarSparkleIcon,
   "/research": MagnifierIcon,
+  "/resume": ClipboardIcon,
 };
 
 function NavigationBar() {
