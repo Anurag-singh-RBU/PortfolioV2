@@ -22,7 +22,7 @@ export default function ResumeViewer() {
     <div className="flex flex-col sm:gap-8">
       {/* Image Viewer Section */}
       <div className="relative overflow-hidden rounded-lg border border-white/10 bg-white/[0.02] backdrop-blur-sm">
-        <div className="flex items-center justify-between border-b border-white/10 sm:p-4">
+        <div className="flex items-center justify-between border-b border-white/10 sm:p-4 p-2">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
               <svg
@@ -66,7 +66,7 @@ export default function ResumeViewer() {
       </div>
 
       {/* Info Card */}
-      <div className="rounded-lg border border-white/10 bg-white/[0.02] sm:p-6 pt-6 backdrop-blur-sm">
+      <div className="rounded-lg border border-white/10 bg-white/[0.02] sm:p-6 p-3 sm:mt-0 mt-2 backdrop-blur-sm">
         <div className="flex gap-3">
           <div className="sm:flex hidden h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/10">
             <FiExternalLink className="h-5 w-5 text-foreground/60" />

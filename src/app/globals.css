@@ -8,6 +8,50 @@
   box-sizing: border-box;
 }
 
+/* Custom Paper Plane Cursor - Elegant pointer like the design */
+html {
+  cursor: auto;
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html.dark {
+  cursor: auto;
+}
+
+/* Cursor for interactive elements - Paper plane pointer */
+a, 
+button, 
+[role="button"], 
+input[type="button"], 
+input[type="submit"], 
+select,
+.cursor-pointer {
+  cursor: pointer;
+}
+
+html.dark a,
+html.dark button,
+html.dark [role="button"],
+html.dark input[type="button"],
+html.dark input[type="submit"],
+html.dark select,
+html.dark .cursor-pointer {
+  cursor: pointer;
+}
+
+/* Text selection cursor */
+input[type="text"], 
+textarea {
+  cursor: text;
+}
+
 :root {
   --selection-background: black;
   --selection-color: white;
