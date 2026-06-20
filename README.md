@@ -1,1 +1,1 @@
-Portfolio Built Using Next and Tailwind CSS.
+Portfolio Built Using Next Js and Tailwind CSS.
